@@ -80,4 +80,4 @@ theme: next
 deploy:
   type: git
   repo:
-    github: https://1afece799c58d952bfe75205181d4dd32c197e27@github.com/xla145/xla145.github.io.git,master
+    github: https://gh_token@github.com/xla145/xla145.github.io.git,master
