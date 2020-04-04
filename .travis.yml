@@ -1,0 +1,37 @@
+language: node_js
+node_js: stable
+
+# assign build branches
+branches:
+  only:
+    - 1.0.0
+
+# 设置环境变量
+env:
+  global:
+    - secure: 1fe46f6bf23468bc0425d9fd45cf35aa1ecf214e
+
+# cache this directory
+cache:
+  directories:
+    - node_modules
+#    - themes # 主题没有更改时可以缓存
+# S: Build Lifecycle
+before_install:
+  - npm install -g hexo-cli # 安装 hexo
+  - git clone https://github.com/xla145/hexo-theme-next.git themes/next # 主题没有更改时不用每次都下载安装一遍
+
+install:
+  - npm install # 安装 package.json 中的插件
+
+script:
+  - hexo generate
+
+after_success:
+  - sed -i "s/gh_token/${secure}/g" _config.yml #使用travisCI中配置的token替换掉_config.yml中对应的占位符
+  - hexo deploy
+# E: Build LifeCycle
+
+
+
+#GH_TOKEN = "1fe46f6bf23468bc0425d9fd45cf35aa1ecf214e"

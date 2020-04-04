@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.deploy_git/
+/.idea/
+/node_modules/
+#/public/
+/themes/indigo/node_modules/
+/hexo_blog.iml
+/hexo.iml
+/public/
