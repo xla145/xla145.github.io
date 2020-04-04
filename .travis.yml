@@ -9,7 +9,7 @@ branches:
 # 设置环境变量
 env:
   global:
-    - secure: 1fe46f6bf23468bc0425d9fd45cf35aa1ecf214e
+    - secure: 1afece799c58d952bfe75205181d4dd32c197e27
 
 # cache this directory
 cache:
