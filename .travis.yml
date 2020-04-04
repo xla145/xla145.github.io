@@ -15,7 +15,8 @@ env:
 cache:
   directories:
     - node_modules
-#    - themes # 主题没有更改时可以缓存
+    - themes # 主题没有更改时可以缓存
+
 # S: Build Lifecycle
 before_install:
   - npm install -g hexo-cli # 安装 hexo
@@ -28,6 +29,8 @@ script:
   - hexo generate
 
 after_success:
+  - git config --global user.name "xla145"
+  - git config --global user.email "1379960679@qq.com"
   - sed -i "s/gh_token/${secure}/g" _config.yml #使用travisCI中配置的token替换掉_config.yml中对应的占位符
   - hexo deploy
 # E: Build LifeCycle
