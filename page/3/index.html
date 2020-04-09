@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.8.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xla145.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="keywords" content="spring Java web python 开发">
+<meta property="og:type" content="website">
+<meta property="og:title" content="诗在远方的个人博客">
+<meta property="og:url" content="https://xla145.github.io/page/3/index.html">
+<meta property="og:site_name" content="诗在远方的个人博客">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="诗在远方的个人博客">
+
+<link rel="canonical" href="https://xla145.github.io/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>诗在远方的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">诗在远方的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">日积月累</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/xla145" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/22/js实现粘贴板功能/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/22/js实现粘贴板功能/" class="post-title-link" itemprop="url">js实现粘贴板功能</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-22 10:28:47" itemprop="dateCreated datePublished" datetime="2019-02-22T10:28:47+08:00">2019-02-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>js实现粘贴板方式有document.exeCommad，window.clipboardData的setData方法，还有使用ZeroClipboard插件</p>
+<h3 id="通过document提供的exeCommad方法实现粘贴板功能"><a href="#通过document提供的exeCommad方法实现粘贴板功能" class="headerlink" title="通过document提供的exeCommad方法实现粘贴板功能"></a>通过document提供的exeCommad方法实现粘贴板功能</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type=&quot;button&quot; onClick=&apos;copyUrls(this)&apos; value=&quot;方式二&quot;&gt;
+
+&lt;script language=&quot;javascript&quot;&gt;
+    function copyUrls(that) {
+        let textArea = document.createElement(&quot;textarea&quot;)
+        textArea.style.position = &apos;fixed&apos;
+        textArea.style.top = 0
+        textArea.style.left = 0
+        textArea.style.width = &apos;2em&apos;
+        textArea.style.height = &apos;2em&apos;
+        textArea.style.padding = 0
+        textArea.style.border = &apos;none&apos;
+        textArea.style.outline = &apos;none&apos;
+        textArea.style.boxShadow = &apos;none&apos;
+        textArea.style.background = &apos;transparent&apos;
+        textArea.value = that.value
+        document.body.appendChild(textArea)
+        textArea.select()
+        try {
+            document.execCommand(&apos;copy&apos;)
+        } catch (err) {
+            this.throwError(&apos;不能使用这种方法复制内容&apos;+err.toString())
+        }
+        document.body.removeChild(textArea)
+    }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/22/js实现粘贴板功能/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/22/get-请求中文乱码问题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/22/get-请求中文乱码问题/" class="post-title-link" itemprop="url">get 请求中文乱码问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-22 09:49:52" itemprop="dateCreated datePublished" datetime="2019-02-22T09:49:52+08:00">2019-02-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>对于浏览器发出的HTTP请求： tomcat 默认是ISO-8859-1 解码</p>
+<p>   URI： xxxxx.action?key=”+encodeURIComponent(“中文”)</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/22/get-请求中文乱码问题/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/20/java-反射笔记/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/20/java-反射笔记/" class="post-title-link" itemprop="url">java 反射笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-20 18:39:41" itemprop="dateCreated datePublished" datetime="2019-02-20T18:39:41+08:00">2019-02-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="什么叫反射？"><a href="#什么叫反射？" class="headerlink" title="什么叫反射？"></a>什么叫反射？</h3><p>反射机制，在Java程序运行过程中动态获取类信息（变量，方法等），以及动态调用对象方法的功能，重点是在<strong>程序运行中</strong></p>
+<p>官方对反射的解释：</p>
+<p>通过反射，我们可以在运行时获得程序或程序集中每一个类型的成员和成员的信息。程序中一般的对象的类型都是在编译期就确定下来的，而 Java 反射机制可以动态地创建对象并调用其属性，这样的对象的类型在编译期是未知的。所以我们可以通过反射机制直接创建对象，即使这个对象的类型在编译期是未知的。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/20/java-反射笔记/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/19/JAVA-笔记/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/19/JAVA-笔记/" class="post-title-link" itemprop="url">JAVA 笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-19 18:22:46" itemprop="dateCreated datePublished" datetime="2019-02-19T18:22:46+08:00">2019-02-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><p>面向对象和面向过程的主要区别</p>
+<p>   面向过程：性能相对较高</p>
+<p>   面向对象：易扩展性，复用，维护</p>
+</li>
+<li><p>Java的一点特点</p>
+<p> 跨平台: Java 虚拟机实现平台无关性<br> 支持多线程，网络编程</p>
+</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/19/JAVA-笔记/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/19/spring-boot-如何创建和使用freemaker自定义标签/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/19/spring-boot-如何创建和使用freemaker自定义标签/" class="post-title-link" itemprop="url">spring boot 如何创建和使用freemaker自定义标签</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-19 18:06:11" itemprop="dateCreated datePublished" datetime="2019-02-19T18:06:11+08:00">2019-02-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>由于spring boot 简化了配置文件的，所以之前在配置文件中实现自定义freemaker标签，统一通过Java类实现。</p>
+<p>之前spring MVC 的实现步骤：</p>
+<pre><code>&lt;!-- =========================freemarker VIEW定义 ========================= --&gt;
+&lt;bean id=&quot;freeMarkerConfig&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer&quot;&gt;
+   &lt;property name=&quot;templateLoaderPaths&quot; value=&quot;/WEB-INF/view2.0/&quot;/&gt;
+   &lt;property name=&quot;freemarkerVariables&quot;&gt;
+      &lt;map&gt;
+         &lt;!-- shiro freemarker标签  使用自定义标签--&gt;
+         &lt;entry key=&quot;shiro&quot;&gt;
+            &lt;bean class=&quot;com.yuelinghui.shiro.freemarker.ShiroTags&quot;/&gt;
+         &lt;/entry&gt;
+      &lt;/map&gt;
+   &lt;/property&gt;
+&lt;/bean&gt;
+那么spring boot 中如何实现，具体实现如下：
+
+创建 FreemarkerConfig ，
+@Component
+public class FreemarkerConfig {
+
+  @Autowired
+  private Configuration configuration;
+
+  @PostConstruct
+  public void setSharedVariable() {
+// 创建自定义标签对象
+    configuration.setSharedVariable(&quot;shiro&quot;, new ShiroTags());
+  }
+
+}
+通过上述方法可以实现引入freemaker 自定义标签
+</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/19/spring-mvc-RequestBody-和-RequestParam-比较/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/19/spring-mvc-RequestBody-和-RequestParam-比较/" class="post-title-link" itemprop="url">spring mvc @RequestBody 和 @RequestParam 比较</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-19 18:03:23" itemprop="dateCreated datePublished" datetime="2019-02-19T18:03:23+08:00">2019-02-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p> @RequestBody</p>
+<pre><code>@RequestBody 注解 通过 HttpMessageReader 使请求的body反序列化成一个对象。
+
+GET、POST方式提交时， 根据 request header Content-Type 的值来判断:
+
+application/x-www-form-urlencoded， 可选（即非必须，因为这种情况的数据@RequestParam, @ModelAttribute也可以处理，当然@RequestBody也能处理）；
+multipart/form-data, 不能处理（即使用@RequestBody不能处理这种格式的数据）；
+其他格式， 必须（其他格式包括application/json, application/xml等。这些格式的数据，使用@RequestBody来处理）；
+$.ajax({
+    type: &quot;POST&quot;,
+    url: &quot;/coupon/del&quot;,
+    dataType : &apos;json&apos;,
+    contentType : &apos;application/json;charset=UTF-8&apos;, // 设置请求的文本类型
+    data: JSON.stringify(ids),
+    success: function (result) {
+        layer.msg(result.msg)
+    }
+});
+控制层接收
+
+public JSONObject del(@RequestBody String[] cids){
+       RecordBean&lt;String&gt; result = couponService.delBatch(cids);
+   if (result.isSuccessCode()) {
+      return JsonBean.success(result.getMsg());
+   }
+   return JsonBean.error(result.getMsg());
+</code></pre><p>@RequestParam</p>
+<pre><code>@RequestParam 
+
+A） 常用来处理简单类型的绑定，通过Request.getParameter() 获取的String可直接转换为简单类型的情况（ String--&gt; 简单类型的转换操作由ConversionService配置的转换器来完成）；因为使用request.getParameter()方式获取参数，所以可以处理get 方式中queryString的值，也可以处理post方式中 body data的值；
+
+B）用来处理Content-Type: 为 application/x-www-form-urlencoded编码的内容，提交方式GET、POST；
+
+C) 该注解有两个属性： name、required； 
+
+name：用来指定要传入值的key名称
+
+required：用来指示参数是否必须绑定；当@RequestParam 被声明是Map&lt;String, String&gt; or MultiValueMap&lt;String, String&gt; required 为false
+
+相比 Request.getParameter() 获取 优点：
+
+通过注解的方式可以减少代码量，代码更整洁
+
+示例代码：
+
+$.ajax({
+    type: &quot;POST&quot;,
+    url: &quot;/coupon/del&quot;,
+    data: {ids:123},
+    success: function (result) {
+        layer.msg(result.msg)
+    }
+});
+控制层
+</code></pre><p>​<br>​     </p>
+<pre><code>* 删除
+   */
+  @ResponseBody
+  @RequestMapping(&quot;/dels&quot;)
+  public JSONObject dels(@RequestParam(name = &quot;ids&quot;) Integer cids){
+     System.out.println(cids);
+     return JsonBean.success(&quot;ok&quot;,cids);
+  }
+</code></pre><p>@ModelAttribute 注解获取参数</p>
+<pre><code>/**
+    * 删除
+    */
+   @RequestMapping(&quot;/coupon&quot;)
+   @ResponseBody
+// @RequiresPermissions(&quot;coupon:del&quot;)
+   public JSONObject coupon(@ModelAttribute Coupon coupon){
+  return JsonBean.success(&quot;&quot;,coupon);
+</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/18/ModelAttribute-对象没有无参的构造函数出错详解-1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/18/ModelAttribute-对象没有无参的构造函数出错详解-1/" class="post-title-link" itemprop="url">@ModelAttribute 对象没有无参的构造函数出错详解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-18 17:15:47" itemprop="dateCreated datePublished" datetime="2019-02-18T17:15:47+08:00">2019-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如果对象没有无参的构造函数 @ModelAttribute 获取参数会报异常</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/18/ModelAttribute-对象没有无参的构造函数出错详解-1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/18/Linux下项目自动部署脚本/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/18/Linux下项目自动部署脚本/" class="post-title-link" itemprop="url">Linux下项目自动部署脚本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-18 17:06:43" itemprop="dateCreated datePublished" datetime="2019-02-18T17:06:43+08:00">2019-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这是本人第一次写shell 脚本，如果有一点错误的地方请谅解</p>
+<p>因为平时上线部署项目都是手动进行的，大概分四步:</p>
+<p>1：备份正在运行的项目文件</p>
+<p>2：关闭Tomcat</p>
+<p>3：复制需要部署的项目文件到Tomcat的weapps路径下</p>
+<p>4：启动Tomcat，并打印启动日志信息</p>
+<p>因为我们公司需要上线的项目版本，测试统一放在测试服务器的ftp下。线上项目部署在线上服务器，所以没有做从测试ftp拉取项目到线上服务器。这步操作需要自己手动将文件放置到线上服务器的某个路径，本人在线上服务器上创建了一个目录用于存放部署文件，并取名 online_delopy_project。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/18/Linux下项目自动部署脚本/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xla145.github.io/2019/02/18/spring boot 学习笔记/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="xula">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗在远方的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/18/spring boot 学习笔记/" class="post-title-link" itemprop="url">spring boot 学习笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-18 17:06:43" itemprop="dateCreated datePublished" datetime="2019-02-18T17:06:43+08:00">2019-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-09 17:33:44" itemprop="dateModified" datetime="2020-04-09T17:33:44+08:00">2020-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1：Spring Boot 定制URL匹配规则的方法</p>
+<p>昨天使用spring boot 做了一个后台管理系统，再方法请求时由于带了后缀导致不能找到对应的controller。原因是spring boot 路由规则设置了真匹配，比如 请求你发起请求 /index ，它只能匹配 /home 路径的 带后缀的一律不匹配。那么如果想达到匹配需求以下步骤：</p>
+<p>1：启动类 extends WebMvcConfigurationSupport</p>
+<p>2：重写configurePathMatch方法</p>
+<pre><code>@SpringBootApplication
+public class DreamAdminApplication extends WebMvcConfigurationSupport {
+
+/**
+ * 1、 extends WebMvcConfigurationSupport
+ * 2、重写下面方法;
+ * setUseSuffixPatternMatch : 设置是否是后缀模式匹配，如“/index ”是否匹配/index.*，默认真即匹配；
+ * setUseTrailingSlashMatch : 设置是否自动后缀路径模式匹配，如“/index ”是否匹配“/index /”，默认真即匹配；
+ */
+@Override
+public void configurePathMatch(PathMatchConfigurer configurer) {
+    configurer.setUseSuffixPatternMatch(true);
+}
+
+
+@Override
+public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    registry.addResourceHandler(&quot;/static/**&quot;).addResourceLocations(&quot;classpath:/static/&quot;);
+    super.addResourceHandlers(registry);
+}
+
+public static void main(String[] args) {
+    SpringApplication.run(DreamAdminApplication.class, args);
+}
+}
+</code></pre><p>2：Spring Boot 自定义静态资源映射目录</p>
+<p>由于继承了WebMvcConfigurationSupport这个类，导致静态文件出现404的问题，所以需要我们自定义静态资源映射目录的，具体实现只需要重写（WebMvcConfigurationSupport ）的addResourceHandlers方法即可。</p>
+<p>registry.addResourceHandler(“/static/**”).addResourceLocations(“classpath:/static/“);</p>
+<p>关于 WebMvcConfigurationSupport 提供的方法，后续再一一讲解。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="xula" src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">xula</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xla145" title="GitHub → https://github.com/xla145" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:xuliandream@gmail.com" title="E-Mail → mailto:xuliandream@gmail.com" rel="noopener" target="_blank"><i class="envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xula</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
