@@ -3,7 +3,7 @@ title: spring mvc @RequestBody 和 @RequestParam 比较
 date: 2019-02-19 18:03:23
 tags:
 ---
-1： @RequestBody
+ @RequestBody
 
     @RequestBody 注解 通过 HttpMessageReader 使请求的body反序列化成一个对象。
     
@@ -30,7 +30,7 @@ tags:
           return JsonBean.success(result.getMsg());
        }
        return JsonBean.error(result.getMsg());
-2：@RequestParam
+@RequestParam
 
     @RequestParam 
     
@@ -59,9 +59,10 @@ tags:
         }
     });
     控制层
-    
-    
-     
+
+
+​    
+​     
      * 删除
         */
        @ResponseBody
@@ -70,7 +71,7 @@ tags:
           System.out.println(cids);
           return JsonBean.success("ok",cids);
        }
-3:@ModelAttribute 注解获取参数
+@ModelAttribute 注解获取参数
 
     /**
         * 删除

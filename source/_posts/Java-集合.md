@@ -5,12 +5,15 @@ tags:
 - JAVA
 ---
 
-# 1.	什么叫数据结构？
+### 什么叫数据结构？
+
 在计算机科学中，数据结构（英语：data structure）是计算机中存储、组织数据的方式。数据结构意味着接口或封装：一个数据结构可被视为两个函数之间的接口，或者是由数据类型联合组成的存储内容的访问方法封装。
-# 2. 结构有哪些？
+### 结构有哪些？
+
 常见的数据结构主要有8种，引用百度百科的图：
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190228100803325.png)
-# 3.	一些数据结构在Java中的具体体现？
+### 一些数据结构在Java中的具体体现？
+
 1.	List 接口
 List 具体实现类有ArrayList, LinkedList, Vector，下面我们来介绍一下它们的原理，区别和使用方式
 * ArrayList
@@ -32,7 +35,7 @@ ArrayList 实现于 List、RandomAccess 接口。可以插入空数据，也支�
 	    elementData[index] = element;
 	    size++;
 	}
-```
+ ```
 首先检查index是否超过当前数组的大小，是否扩容判断，数组的复制将需要插入的位置的元素往后移一位，最后执行插入特定元素。
 数组的开销主要在于，创建开辟数组空间和数组中的元素移动，所以在平时的操作中，尽量避免使用Add（int index，E data）方法，创建数组前确认数组的长度等。
 * 	LinkedList
@@ -56,9 +59,11 @@ Map的每一个元素都是一个Map.Entry，这个实体的结构是< Key, Valu
 * Map总结
 HashMap存储键值对。当程序试图将一个key-value对放入 HashMap 中时，程序首先根据该key的hashCode()返回值决定该Entry的存储位置：如果两个Entry的key的hashCode() 返回值相同，那它们的存储位置相同。如果这两个Entry的key通过equals比较返回true，新添加Entry的value将覆盖集合中原有Entry的 value，但key不会覆盖。如果这两个Entry的key通过equals 比较返回false，新添加的Entry将与集合中原有Entry形成Entry 链，而且新添加的 Entry 位于 Entry 链的头部。由于HashMap多线程下扩容会出线程不安全，具体参考[谈谈HashMap线程不安全的体现]( https://blog.csdn.net/qq_24184997/article/details/87979866)这篇文章。
 接下来一篇单独讲一下hashMap 在Java8跟之前版本的变化和另一个ConcurrentHashMap 能解决并发情况下的线程不安全
-# 4. 总结：
+### 总结：
+
 大概讲了一下什么是数据结构，Java集合中一些实现类底层使用的数据结构，并详细介绍了一些Java集合实现类的特点和区别。
 
-参考文档:
+### 参考文档
+
 [数据结构](https://zh.wikipedia.org/zh-hans/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 [JCSprout](https://crossoverjie.top/JCSprout/#/?id=introduction)

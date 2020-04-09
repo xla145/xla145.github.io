@@ -4,23 +4,25 @@ date: 2019-12-05 09:37:32
 tags:
 - mysql
 ---
-#  下载mysql-5.7.28源码包（不需要编译）：
+下载mysql-5.7.28源码包（不需要编译）：
 
 地址：https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz
+
+创建MySQL组并添加MySQL用户，MySQL用户不存在则创建
+
 <!-- more -->
-#  创建MySQL组并添加MySQL用户，MySQL用户不存在则创建
 
     注意：执行以下命令需要在root权限下执行
-
+    
     groupadd mysql -- 创建mysql 组
-
+    
     useradd -r -g mysql mysql  创建MySQL用户并加入MySQL组
-
+    
     useradd 命令参数如下：
 
    ![useradd命令](https://img.mupaie.com/useradd.png)
 
-# 解压源码
+解压源码
 
 解压包到指定目录下（/usr/local/mysql/）如果/usr/local/mysql/ 目录不存在则创建该目录
 
@@ -28,15 +30,15 @@ tags:
 tar -zxvf mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz -C /usr/local/mysql/
 ```
 
-# 设置目录权限 
+设置目录权限 
 
 ``` 
 cd /usr/local/mysql/ 
 chown -R mysql:mysql /usr/local/mysql/
 chmod 775 /usr/local/mysql/
 ```
-   
-# 创建 my.cnf 文件 
+
+创建 my.cnf 文件 
 
 如果/etc 下没有该文件，并填入以下内容
 
@@ -94,7 +96,7 @@ port = 3306
 socket = /usr/local/mysql/mysqld/mysql.sock
 default-character-set = utf8
 ```
-# 创建文件夹
+创建文件夹
 
 ```
  $ mkdir -p /usr/local/mysql/data
@@ -103,7 +105,7 @@ default-character-set = utf8
  $ chown -R mysql:mysql /usr/local/mysql/mysqld
  $ chmod -R 755 /usr/local/mysql/mysqld
 ```
-# 初始化数据库 
+初始化数据库 
 
 进入到/usr/local/mysql/bin 下执行以下命令
 
@@ -116,7 +118,8 @@ A temporary password is generated for root@localhost: dsuIeduSe5>E
 
 方便等下登录 比如 dsuIeduSe5 就是我的临时密码
 
-# 创建软链接并配置环境变量
+创建软链接并配置环境变量
+
 ```
  $ln -fs /usr/local/mysql/bin/mysql
 /usr/local/bin/mysql $ cp /usr/local/mysql/support-files/mysql.server
@@ -127,22 +130,24 @@ A temporary password is generated for root@localhost: dsuIeduSe5>E
 MYSQL_HOME= /usr/local/mysq/bin PATH=$MYSQL_HOME/bin:$PATH export
 MYSQL_HOME
 ```
-# 启用Mysql 
+启用Mysql 
 
 ```
 /etc/init.d/mysqld start 或 service mysql start
 ```
 
-# 登录mysql
+登录mysql
+
     mysql -uroot -p  回车
-
+    
     输入上述的临时密码
-
+    
     登入成功后出现以下内容则表示成功：
 
    ![useradd命令](https://img.mupaie.com/mysql.png)
 
-# 安装过程下如果出现以下问题
+安装过程下如果出现以下问题
+
 * 问题1：
 启动 mysql 的时候出现
 Can’t connect to local MySQL server through socket ‘/var/lib/mysql/mysql.sock’ 

@@ -74,4 +74,3 @@ gitLab一些小问题
 解决：打开 /var/opt/gitlab/gitlab-rails/etc 目录
 
 修改 gitlab.yml 文件，将端口改成你想要的端口号 ! !
-![gitLab-搭建](gitLab-搭建/1550803434.jpg)

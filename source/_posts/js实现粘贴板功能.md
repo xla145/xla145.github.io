@@ -7,7 +7,8 @@ tags:
 ---
 js实现粘贴板方式有document.exeCommad，window.clipboardData的setData方法，还有使用ZeroClipboard插件
 
-# 1. 通过document提供的exeCommad方法实现粘贴板功能 
+### 通过document提供的exeCommad方法实现粘贴板功能 
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -52,7 +53,7 @@ js实现粘贴板方式有document.exeCommad，window.clipboardData的setData方
 
 exeCommad 还有很多方法，待续
 
-# 2. window.clipboardData的setData方法
+### window.clipboardData的setData方法
 
 * google浏览器（不兼容）
 * IE浏览器（兼容）
@@ -76,7 +77,9 @@ exeCommad 还有很多方法，待续
         </body>
         </html>
 
-# 3. 通过插件clipboard方式实现 https://github.com/zenorocha/clipboard.js
+### 通过插件clipboard方式实现 
+
+js地址 https://github.com/zenorocha/clipboard.js
 
     <!DOCTYPE html>
     <html lang="en">
