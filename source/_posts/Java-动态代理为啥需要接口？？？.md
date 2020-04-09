@@ -49,13 +49,15 @@ public static Object newProxyInstance(ClassLoader loader,
         ....
     }
 ```
-从源码上，首先进行一系列的判断逻辑，然后到了
-Class<?> cl = getProxyClass0(loader, intfs);
-获取代理类的Class 对象，接下来执行
- final Constructor<?> cons = cl.getConstructor(constructorParams);
+从源码上，首先进行一系列的判断逻辑，然后到了Class<?> cl = getProxyClass0(loader, intfs);
+获取代理类的Class 对象，接下来执行 final Constructor<?> cons = cl.getConstructor(constructorParams);
  获取Class的构造对象，通过cons.newInstance(new Object[]{h}); 返回一个代理类实例对象，具体参考 [Java反射](http://www.xulian.net.cn/2019/02/20/java-%E5%8F%8D%E5%B0%84%E7%AC%94%E8%AE%B0/) 。
+
+<!-- more -->
+
  目前我们只知道代理类对象的创建过程，但是为啥只能传入接口还是得不到解决，那我们只能继续查看getProxyClass0源码：
  具体实现步骤：
+
  1. 验证，通过类加载对象和接口列表获取代理类的Class对象，如果缓存中存在则返回，没有就通过代理类工厂创建代理类
  2. 创建代理类
 通过ProxyClassFactory工厂创建代理类，核心代码如下

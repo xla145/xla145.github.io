@@ -24,7 +24,10 @@ On CentOS 7 (and RedHat/Oracle/Scientific Linux 7), 以下命令可以使http和
 > sudo systemctl reload firewalld
 > ```
 
+<!-- more -->
+
 接下来，安装 Postfix 用于发送邮件。如果你想用其他的方式发送邮件，请跳过该步骤并在gitLab 安装之后，配置其他的邮件服务器。
+
 >
 > ```
 > sudo yum install postfix

@@ -12,6 +12,8 @@ tags:
 
 ![在这里插入图片描述](https://img.mupaie.com/20190227175949596.png)
 
+<!-- more -->
+
 使用iframe 代码如下：
 
 	<div class="layui-tab-content" style="min-height: 150px; padding: 0 0 0 0;">

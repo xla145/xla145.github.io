@@ -14,6 +14,8 @@ tags:
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190228100803325.png)
 ### 一些数据结构在Java中的具体体现？
 
+<!-- more -->
+
 1.	List 接口
 List 具体实现类有ArrayList, LinkedList, Vector，下面我们来介绍一下它们的原理，区别和使用方式
 * ArrayList

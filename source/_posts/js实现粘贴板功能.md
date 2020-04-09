@@ -45,6 +45,8 @@ js实现粘贴板方式有document.exeCommad，window.clipboardData的setData方
     </body>
     </html>
 
+<!-- more -->
+
 优点不需要引用外部插件
 
 * google浏览器（兼容）

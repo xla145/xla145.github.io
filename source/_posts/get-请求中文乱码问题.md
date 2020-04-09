@@ -9,6 +9,8 @@ tags:
 
    URI： xxxxx.action?key="+encodeURIComponent(“中文”)
 
+<!-- more -->
+
    在服务器获取 到key的值是tomcat使用 ISO-8859-1编码进行解码的字符，会出现乱码的问题。目前有两种方式可以解决该问题。
 
     1：通过转成编码为ISO-8859-1字节数组，然后再转成UTF-8的字符串

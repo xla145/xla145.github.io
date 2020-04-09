@@ -9,6 +9,9 @@ tags:
 ### 为啥需要session和cookie?
 
 由于http是无状态的，如果需要追踪用户的记录主要引入session 追踪用户，一般我们常用session 记录用户的登录态，存放用户的一些信息 主要用于用户浏览其他页面时对用户登录态的判断。
+
+<!-- more -->
+
 ### 存在位置
 
 * cookie: 是基于client端 
@@ -25,6 +28,7 @@ tags:
   4. 确定的关闭方式，当用户退出登录时，清除cookie 中的session ID ，session 存储的内容等信息。
   5. 尽量将网站从http变成https，这样传输中可以避免cookie被劫持。
   6. cookie的过期时间不能设置过长，cookie和session 过期时间尽量设置一样，一旦cookie过期了 session ID 也跟着过期，但是有一种情况，session当用户刷新页面，session 会一直续期。虽然前面说的cookie过期了，其实 session ID 还没有过期这样也会导致问题出现。
+
     小结：安全问题是相对的，主要你做到上面几点，安全问题自然对你影响不大。
 
 ### 存储内容大小
